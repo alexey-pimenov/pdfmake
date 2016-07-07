@@ -8,6 +8,9 @@ module.exports = {
     path: path.join(__dirname, './build'),
     filename: 'pdfmake.js'
   },
+	externals:{
+		"lodash":"_"
+	},
   resolve: {
     alias: {
       fs: path.join(__dirname, './src/browser-extensions/virtual-fs.js')
